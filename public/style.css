@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
+body{
+    background-color: black;
+}
+main{
+    margin:auto;
+    width: 70%;
+}
+button{
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    width: 100px;
+    padding: 20px;
+}
+#app{
+    background-image: url("images/stars.jpg");
+    background-size: 100%;
+    padding-bottom: 200px;
+}
+#header{
+    
+    width: 100%;
+    
+}
+#headerButtonOne, #headerButtonTwo, #headerButtonThree{
+    display:inline-block;
+    text-align: center;
+    border-width: 1px;
+    border-style: ridge;
+    border-color: rgb(184, 174, 174);
+    margin-right: 20px;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
