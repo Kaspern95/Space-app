@@ -3,21 +3,42 @@
     padding: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
 }
-
+/*
+    Image on body, to populate things outside of used space
+*/
 body{
-    background-color: black;
     background-image: url("images/nightsky.jpg");
 }
 /*
-    Main contains 
+    Main is centered, contains the content of the page
+    Shouldnt normally contain header, but troubles with react
+    made it so i had to merge them.
 */
 main{
     margin:auto;
     background-color: black;
-    width: 70%;
-    height: 100%;
-    
+    width: 70%; 
 }
+/*
+    Page title
+*/
+#app{
+    margin: auto;
+    width: 70%;    
+    color:white;
+    padding: 25px;
+    font-size: 30px;
+}
+/*
+    The header, Displaying inline.
+*/
+#headerButtonOne, #headerButtonTwo, #headerButtonThree{
+    display:inline-block;
+    text-align: center;
+}
+/*
+    Button styling  
+*/
 button{
     font-size: 20px;
     color: white;
@@ -26,20 +47,12 @@ button{
     padding: 20px;
     border:none;
 }
-#app{
-    margin: auto;
-    width: 70%;    
-    color:white;
-    padding: 25px;
-    font-size: 30px;
+button:hover{
+    cursor: pointer;
 }
-#header{
-    width: 100%;
-}
-#headerButtonOne, #headerButtonTwo, #headerButtonThree{
-    display:inline-block;
-    text-align: center;
-}
+/*
+    The content on the page  
+*/
 #content-space{
     color:white;
     padding-top: 20px;

@@ -1,10 +1,11 @@
+//This document takes JSX and translates it to JS into the /scripts/app.js file
 const pageHead = <h1>Space!</h1>;
 
 const appRoot = document.getElementById("app");
 
 ReactDOM.render(pageHead, appRoot);
 
-
+//What is displayed to the page
 const pageContentSpace =(
     <div>
         <h1>
@@ -23,12 +24,14 @@ const pageContentSpace =(
 );
 const appContentSpace = document.getElementById("content-space");
 ReactDOM.render(pageContentSpace, appContentSpace);
+/* Why only 1 page?
+I was unable to render different pages
 
+No ReactRouter
+I was not able to make ReactRouter work, i have never used it before
+and i was not able to find out how it worked
 
-
-ReactDOM.render(pageContentSun, appContentSun);
-
-
+*/ 
 //Button Functions
 function funcButtonOne(){
     document.location.replace("index.html");

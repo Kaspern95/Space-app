@@ -1,5 +1,6 @@
 "use strict";
 
+//This document takes JSX and translates it to JS into the /scripts/app.js file
 var pageHead = React.createElement(
     "h1",
     null,
@@ -10,6 +11,7 @@ var appRoot = document.getElementById("app");
 
 ReactDOM.render(pageHead, appRoot);
 
+//What is displayed to the page
 var pageContentSpace = React.createElement(
     "div",
     null,
@@ -36,9 +38,14 @@ var pageContentSpace = React.createElement(
 );
 var appContentSpace = document.getElementById("content-space");
 ReactDOM.render(pageContentSpace, appContentSpace);
+/* Why only 1 page?
+I was unable to render different pages
 
-ReactDOM.render(pageContentSun, appContentSun);
+No ReactRouter
+I was not able to make ReactRouter work, i have never used it before
+and i was not able to find out how it worked
 
+*/
 //Button Functions
 function funcButtonOne() {
     document.location.replace("index.html");
